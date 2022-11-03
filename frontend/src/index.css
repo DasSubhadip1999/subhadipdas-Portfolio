@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu:wght@300;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: 'PT Sans', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+}
+.img-bg {
+    background: rgb(34,193,195);
+    background: linear-gradient(172deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    rotate: 12deg;
+    border-radius: 1rem 3.5rem 0 0;
+    position: absolute;
+    right: 1rem;
+    bottom: -2rem;
+}
+.name {
+    font-family: 'Ubuntu', sans-serif;
+}
+.gradient {
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 17%, rgba(251,208,165,1) 63%, rgba(213,171,242,1) 100%);
+}
+.circle1 {
+    box-shadow: #fff 0px 1px 4px, #fff 0px 0px 0px 3px;
+    left: 1rem;
+    top: 1rem;
+}
+.circle2 {
+    box-shadow: #3467e0 0px 1px 4px, #3467e0 0px 0px 0px 3px;
+}
+.circle3 {
+    box-shadow: #d9999b 0px 1px 4px, #d9999b 0px 0px 0px 3px;
+}
+.circle4 {
+    box-shadow: #c3e6d8 0px 1px 4px, #c3e6d8 0px 0px 0px 3px;
+}
+.services-heading {
+    font-family: 'Ubuntu', sans-serif;
+}
+
