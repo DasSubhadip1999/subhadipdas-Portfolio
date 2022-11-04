@@ -1,7 +1,7 @@
 import { FaBars, FaChevronLeft, FaChevronRight, FaSlash } from "react-icons/fa";
 function Navbar() {
   return (
-    <div className="flex items-center justify-between bg-white rounded-sm py-2 mt-3 mx-2 px-2 fixed top-1 w-[96%] shadow-sm z-40">
+    <div className="flex items-center justify-between bg-white rounded-sm py-2 mt-3 mx-2 px-2 fixed top-1 w-[95%] shadow-sm z-40">
       <h1
         className="flex items-center text-[#242d4a]"
         onClick={(e) => {

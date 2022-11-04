@@ -14,7 +14,7 @@ const staticData = [
   },
   {
     logo: Design,
-    title: "Design",
+    title: "Designer",
     content: "It is a long established fact that a reader will",
   },
 ];

@@ -2,8 +2,8 @@ import React from "react";
 
 function ServiceDec() {
   return (
-    <div className="p-4">
-      <h1 className="services-heading text-5xl flex flex-col font-bold">
+    <div className="px-5 py-3">
+      <h1 className="name text-5xl flex flex-col font-bold">
         <span className="text-[#071d48]">My awesome</span>
         <span className="text-[#e56612]">services</span>
       </h1>
