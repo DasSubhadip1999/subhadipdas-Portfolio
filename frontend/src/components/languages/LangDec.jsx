@@ -1,6 +1,6 @@
 function LangDec() {
   return (
-    <div>
+    <div className="px-4">
       <h1 className="name text-3xl text-[#071d48] font-bold">
         Clients get always exceptional works from me
       </h1>

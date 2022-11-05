@@ -3,7 +3,7 @@ import LangImg from "./LangImg";
 
 function Languages() {
   return (
-    <div className="p-4">
+    <div className="pt-4 my-2">
       <LangDec />
       <LangImg />
     </div>

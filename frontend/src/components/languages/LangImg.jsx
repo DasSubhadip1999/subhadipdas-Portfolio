@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 function LangImg() {
   return (
-    <div className="my-2 flex">
+    <div className="my-2 flex bg-[#e8f7fb] px-3 pb-3">
       <div className="">
         <img className="w-28 h-60 mt-4" src={Boy} alt="boy" />
       </div>
@@ -23,31 +23,31 @@ function LangImg() {
           Can work with
         </h1>
         <div className="grid grid-cols-3 gap-3">
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <FaHtml5 size={45} />
           </div>
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <FaCss3Alt size={45} />
           </div>
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <FaJsSquare size={44} />
           </div>
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <img className="h-18 w-18" src={Jquery} alt="jquery" />
           </div>
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <FaReact size={45} />
           </div>
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <FaNode size={48} />
           </div>
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <img className="h-12 w-12" src={Express} alt="express shadow-md" />
           </div>
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <img className="ml-2 h-14 w-8" src={Mongo} alt="mongo" />
           </div>
-          <div className="bg-[#e8f7fb] rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md">
             <img className="h-14 w-20" src={Mongoose} alt="mongoose" />
           </div>
         </div>

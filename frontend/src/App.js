@@ -1,5 +1,8 @@
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Languages from "./components/languages/Languages";
+import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
 
 function App() {
@@ -9,9 +12,9 @@ function App() {
         <Header />
         <Services />
         <Languages />
-        {/* languges */}
-        {/* projects */}
-        {/* about me */}
+        <Projects />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
