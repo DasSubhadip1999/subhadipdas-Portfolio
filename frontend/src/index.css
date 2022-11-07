@@ -16,6 +16,11 @@ body {
     right: 1rem;
     bottom: -2rem;
 }
+@media (min-width : 421px) {
+    .img-bg {
+        rotate: 9deg;
+    }
+}
 .name {
     font-family: 'Ubuntu', sans-serif;
 }
@@ -65,4 +70,16 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 17%, rgba(251,208,165,1) 
         clip-path: circle(2px at 88% 2rem);
         
     }
+}
+.Toastify__toast--error {
+    width: 17rem;
+    left: 5rem;
+    top: 1rem;
+    border-radius: 5px;
+}
+.Toastify__toast--success {
+    width: 17rem;
+    left: 5rem;
+    top: 1rem;
+    border-radius: 5px;
 }

@@ -3,7 +3,7 @@ import Button from "../../../shared/Button";
 function TextDec() {
   return (
     <div className="py-4 mx-2 px-3">
-      <h1 className="flex flex-col name text-5xl text-[#071d48] font-extrabold">
+      <h1 className="flex flex-col name text-5xl md:text-7xl text-[#071d48] font-extrabold">
         <span>Hi! I AM</span>
         <span>Subhadip Das</span>
       </h1>

@@ -11,11 +11,13 @@ function ProfileDec() {
     });
   }, []);
   return (
-    <div className="flex flex-col mt-12">
-      <TextDec />
-
-      <ProfileImg />
-    </div>
+    <>
+      <div className="flex flex-col md:flex-row mt-12 md:mt-36 border-2 md:mx-28">
+        <TextDec />
+        <ProfileImg />
+      </div>
+      <div className="gradient w-full h-16 relative z-20 hidden md:block"></div>
+    </>
   );
 }
 
