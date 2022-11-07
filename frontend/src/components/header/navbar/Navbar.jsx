@@ -1,5 +1,18 @@
-import { FaBars, FaChevronLeft, FaChevronRight, FaSlash } from "react-icons/fa";
+import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+import listData from "../../../staticData/ListData";
+import {
+  FaBars,
+  FaChevronLeft,
+  FaChevronRight,
+  FaSlash,
+  FaTimes,
+} from "react-icons/fa";
+import ListItem from "./ListItem";
 function Navbar() {
+  const [isMenu, setIsMenu] = useState(false);
+  const [count, setCount] = useState(0);
+  const [remove, SetRemove] = useState(false);
   return (
     <div className="flex items-center justify-between bg-white rounded-sm py-2 mt-3 mx-2 px-2 fixed top-1 w-[95%] shadow-sm z-40">
       <h1
@@ -24,7 +37,42 @@ function Navbar() {
       </nav>
       <button className="hidden">contact us</button>
       {/* display on small screen */}
-      <FaBars color="#e5660f" size={21} />
+      {isMenu && !remove ? (
+        <FaTimes
+          color="#e5660f"
+          size={21}
+          onClick={() => {
+            setIsMenu((prev) => !prev);
+            setTimeout(() => {
+              SetRemove(true);
+            }, 700);
+          }}
+          className="absolute right-2 z-50"
+        />
+      ) : (
+        <FaBars
+          color="#e5660f"
+          size={21}
+          onClick={() => {
+            setIsMenu((prev) => !prev);
+            setCount(1);
+            SetRemove(false);
+          }}
+          className="absolute right-2 z-50"
+        />
+      )}
+      <div
+        className={`absolute  z-0 -right-2 -top-3 w-[70vw] h-[100vh] bg-white ${
+          !isMenu && count < 1 ? "hidden" : ""
+        } ${remove ? "hidden" : ""}`}
+        id={`${isMenu ? "menubaradd" : "menubarremove"}`}
+      >
+        <ul className="mt-20 navlinks">
+          {listData.map(({ logo, text }) => (
+            <ListItem key={uuidv4()} logo={logo} text={text} />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

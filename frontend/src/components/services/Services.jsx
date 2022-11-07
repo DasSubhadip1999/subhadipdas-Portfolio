@@ -11,7 +11,7 @@ function Services() {
     });
   }, []);
   return (
-    <div className="">
+    <div id="services">
       <ServiceDec />
 
       <ServiceItems />

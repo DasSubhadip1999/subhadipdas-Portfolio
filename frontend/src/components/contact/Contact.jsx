@@ -2,7 +2,10 @@ import Mailto from "../../shared/Mailto";
 function Contact() {
   return (
     <div className="mt-8">
-      <h1 className="text-2xl name text-[#071d48] font-bold text-center pb-6 my-1">
+      <h1
+        className="text-2xl name text-[#071d48] font-bold text-center pb-6 my-1"
+        id="contact"
+      >
         Take A Coffe<span className="text-[#e56612] mx-2">&</span>Chat with Me
       </h1>
       <div className="bg-[#e8f7fb] mt-2 p-3">

@@ -23,31 +23,31 @@ function LangImg() {
           Can work with
         </h1>
         <div className="grid grid-cols-3 gap-3">
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <FaHtml5 size={45} />
           </div>
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <FaCss3Alt size={45} />
           </div>
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <FaJsSquare size={44} />
           </div>
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <img className="h-18 w-18" src={Jquery} alt="jquery" />
           </div>
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <FaReact size={45} />
           </div>
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <FaNode size={48} />
           </div>
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <img className="h-12 w-12" src={Express} alt="express shadow-md" />
           </div>
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <img className="ml-2 h-14 w-8" src={Mongo} alt="mongo" />
           </div>
-          <div className="bg-white rounded-md p-2 shadow-md">
+          <div className="bg-white rounded-md p-2 shadow-md" data-aos="zoom-in">
             <img className="h-14 w-20" src={Mongoose} alt="mongoose" />
           </div>
         </div>

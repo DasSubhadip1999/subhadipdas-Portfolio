@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import SmallScreenDec from "./SmallScreenDec";
 //
-function ProjectItem({ imgLink, title, live, github }) {
+function ProjectItem({ id, imgLink, title, live, github, desc }) {
   const [screen, setScreen] = useState(false);
 
   useEffect(() => {
@@ -20,13 +20,16 @@ function ProjectItem({ imgLink, title, live, github }) {
     }
   });
   return (
-    <div>
+    <div className="my-2 shadow-md rounded-md">
       <img
         src={imgLink}
         alt="hostinger"
-        className="rounded-md shadow-md ml-[0.1rem]"
+        className="rounded-md rounded-b-none ml-[0.1rem]"
+        data-aos={id % 2 === 0 ? "fade-right" : "fade-left"}
       />
-      {screen && <SmallScreenDec title={title} live={live} github={github} />}
+      {screen && (
+        <SmallScreenDec title={title} live={live} github={github} desc={desc} />
+      )}
     </div>
   );
 }

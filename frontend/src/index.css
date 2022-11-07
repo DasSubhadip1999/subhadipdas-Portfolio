@@ -37,4 +37,32 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 17%, rgba(251,208,165,1) 
 .circle4 {
     box-shadow: #c3e6d8 0px 1px 4px, #c3e6d8 0px 0px 0px 3px;
 }
-
+#menubaradd {
+    display: block;
+    transition: all 0.7s ease-out;
+    animation: scale 0.7s ease-out;
+    pointer-events: all;
+}
+@keyframes scale {
+    0% {
+        clip-path: circle(2px at 88% 2rem);
+    }
+    100% {
+        clip-path: circle(1000px at 88% 2rem);
+    }
+}
+#menubarremove {
+    transition: all 0.7s ease-out;
+    animation: shrink 0.7s ease-out;
+    pointer-events: all;
+    /* display: none; */
+}
+@keyframes shrink {
+    0% {
+        clip-path: circle(1000px at 88% 2rem);
+    }
+    100% {
+        clip-path: circle(2px at 88% 2rem);
+        
+    }
+}
